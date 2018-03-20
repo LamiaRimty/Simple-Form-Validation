@@ -7,71 +7,100 @@
 	<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>Form Validation With PHP</title>
+
+<style>
+
+
+		
+			
+.form-validation{
+	width: 450px;
+	margin: 0 auto;
+	background: #ddd;
+	padding: 20px 50px;
+	box-sizing: border-box;
+
+}
+
+.label{
+
+	float: left;
+	width: 100%;
+	font-size: left;
+	width: 100%;
+	font-size: bold;
+	padding-bottom: 10px;
+
+}
+
+.text{
+
+}
+
+
+
+.error{
+	color: #cc0000;
+	padding-top: 5px;
+	float: left;
+	width: 100%;
+}
+
+
+
+
+		</style>
+
+
+
 	</head>
 	<body>
+		
 	
+<div class="form-validation">
+	<h2>Create Student Account</h2>
 
-	<form>
-		<p>
-		<label>First Name</label>
-		<input type="text" name="firstName"  id="firstName"/>
+<form action="" method="post" enctype="mutipart/form/data">
+	<table>
+		<tr class="row">
+			<td class="label"><label for="name">Name</label></td>
 
-		</p>
+			<td ><input  class="text" type="text"  id="name " name="name" placeholder="Name">   </td>
+		</tr>
 
-		 <p>
-		<label>Last Name</label>
-  		<input type="text" name="lastName"  id="lastName"/>
+		<tr class="row">
+			<td class="label"><label for="fathername">Father's Name</label></td>
+
+			<td ><input  class="text" type="text"  id="fathername" name="fathername" placeholder="Father's Name">   </td>
+		</tr>
+
+
+<tr class="row">
+			<td class="label"><label for="roll">Roll No</label></td>
+
+			<td ><input  class="text" type="text"  id="roll " name="roll" placeholder="Roll ">   </td>
+		</tr>
+
+		<tr class="row">
+			<td class="label"><label for="reg">Registation</label></td>
+
+			<td ><input  class="text" type="text"  id="reg " name="reg" placeholder="Registation ">   </td>
+		</tr>
+
+
+
 		
-		</p>
 
-		<p>
-		<label>Email</label>
-		<input type="text" name="email"  id="email"/>
-		</p>
+	</table>
+	
+</form>
 
-<div class="well"> 
-      <div class="form-group">
-      <label>Date of Birth</label>
-      <input type="date" class="form-control" id="exampleInputDOB1" placeholder="Date of Birth">
-    </div>
 </div>
-
-<div class="well"> 
-</div>
-
-
-		<p>
-		<label>Passsword</label>
-		<input type="text" name="password"  id="password"/>
+	
 		
-		<input type="submit" name="Submit">
-	</p>
-
-<input id="numb">
-
-<button type="button" onclick="myFunction()">Submit</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-    var x, text;
-
-    // Get the value of the input field with id="numb"
-    x = document.getElementById("numb").value;
-
-    // If x is Not a Number or less than one or greater than 10
-    if (isNaN(x) || x < 1 || x > 10) {
-        text = "Input not valid";
-    } else {
-        text = "Input OK";
-    }
-    document.getElementById("demo").innerHTML = text;
-}
-</script>
 
 
-	</form>
+	
 	</body>
 	</html>
